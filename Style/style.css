@@ -9,7 +9,7 @@ body {
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(123, 135, 145);
 }
 
 /* Encabezado de la pagina */
@@ -22,6 +22,9 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgb(24, 43, 77);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 #encabezado img {
@@ -48,5 +51,70 @@ body {
 
 #navbar a:hover {
     background-color: gray;
+    color: black;
+}
+
+/* Main */
+#principal {
+    display: grid;
+    justify-items: center;
+    margin-top: 90px;
+    padding: 10px;
+}
+
+.Section_container {
+    background-color: rgba(173, 185, 202, 0.3);
+    width: 100%;
+    height: 550px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#Container_Inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Container_Inicio img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover; 
+}
+
+#Container_Inicio h1 {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+#Container_Acerca_De_Mi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.Section_container h2 {
+    font-size: 35px;
+    background-color: rgb(24, 43, 77);
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 5px;
+    color: whitesmoke;
+}
+
+
+#Container_Acerca_De_Mi img {
+    width: 450px;
+    height: 450px;
+    padding: 10px;
+}
+
+#Container_Acerca_De_Mi p {
+    text-align: justify;
+    font-size: 30px;
+    padding: 15px;
     color: black;
 }
