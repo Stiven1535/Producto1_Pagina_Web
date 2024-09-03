@@ -34,6 +34,7 @@ body {
     left: 40px;
 }
 
+/* Barra de navegacion del encabezado */
 #navbar {
     display: flex;
     align-items: center;
@@ -62,14 +63,16 @@ body {
     padding: 10px;
 }
 
+/* Contenedores de las secciones */
 .Section_container {
     background-color: rgba(173, 185, 202, 0.3);
     width: 100%;
-    height: 550px;
+    height: 600px;
     margin: 20px;
     border-radius: 10px;
 }
 
+/* Container del inicio */
 #Container_Inicio {
     display: flex;
     align-items: center;
@@ -78,8 +81,8 @@ body {
 
 #Container_Inicio img {
     width: 100%;
-    height: 550px;
-    object-fit: cover; 
+    height: 600px;
+    object-fit: cover;
 }
 
 #Container_Inicio h1 {
@@ -88,6 +91,7 @@ body {
     font-size: 40px;
 }
 
+/* Container de acerca de mi*/
 #Container_Acerca_De_Mi {
     display: flex;
     align-items: center;
@@ -95,6 +99,7 @@ body {
     gap: 40px;
 }
 
+/* Titulo de los ultimos 4 container*/
 .Section_container h2 {
     font-size: 35px;
     background-color: rgb(24, 43, 77);
@@ -104,7 +109,6 @@ body {
     margin: 5px;
     color: whitesmoke;
 }
-
 
 #Container_Acerca_De_Mi img {
     width: 450px;
@@ -117,4 +121,35 @@ body {
     font-size: 30px;
     padding: 15px;
     color: black;
+}
+
+/* Container hobbies*/
+
+#Container_Hobbies {
+    display: flex;
+    justify-content: center;
+}
+
+.sub_container_hobbies {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sub_container_hobbies h2 {
+    background-color: rgb(24, 43, 77);
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.sub_container_hobbies img {
+    width: 380px;
+    height: 350px;
+}
+
+.sub_container_hobbies p {
+    text-align: justify;
+    padding: 0 20px;
+    font-size: 20px;
 }
