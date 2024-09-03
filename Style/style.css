@@ -68,7 +68,7 @@ body {
     background-color: rgba(173, 185, 202, 0.3);
     width: 100%;
     height: 600px;
-    margin: 20px;
+    margin: 15px;
     border-radius: 10px;
 }
 
@@ -124,7 +124,6 @@ body {
 }
 
 /* Container hobbies*/
-
 #Container_Hobbies {
     display: flex;
     justify-content: center;
@@ -151,5 +150,61 @@ body {
 .sub_container_hobbies p {
     text-align: justify;
     padding: 0 20px;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+/* Container Objetivos*/
+#Container_Objetivos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#Container_Objetivos img {
+    width: 580px;
+    height: 600px;
+    margin-top: -70px;
+}
+
+#Container_Objetivos p {
+    text-align: justify;
+    font-size: 40px;
+    padding: 0px 50px;
+}
+
+/* Container Aspiraciones*/
+#Container_Aspiraciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#Container_Aspiraciones img {
+    width: 580px;
+    height: 600px;
+    margin-top: -70px;
+}
+
+#Container_Aspiraciones p {
+    text-align: justify;
+    font-size: 40px;
+    padding: 0px 50px;
+}
+
+/* Footer */
+#Container_Footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 230px;
+    gap: 15px;
+    background-color: rgb(24, 43, 77);
+}
+
+#Container_Footer p{
+    font-size: 30px;
+    color: whitesmoke;
+    margin-top: 10px;
 }
