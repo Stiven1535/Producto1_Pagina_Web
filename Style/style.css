@@ -12,11 +12,17 @@ body {
     background-color: rgb(123, 135, 145);
 }
 
+.Contenedor {
+    width: 90%;
+    max-width: 2000px;
+    margin: 20px auto;
+}
+
 /* Encabezado de la pagina */
 #encabezado {
     display: flex;
-    background-color: green;
-    width: 100%;
+    width: 90%;
+    max-width: 2000px;
     height: 40px;
     padding: 20px 0px 20px 0px;
     align-items: center;
@@ -57,18 +63,20 @@ body {
 
 /* Main */
 #principal {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     margin-top: 90px;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 /* Contenedores de las secciones */
 .Section_container {
     background-color: rgba(173, 185, 202, 0.3);
     width: 100%;
-    height: 600px;
-    margin: 15px;
+    height: 620px;
+    margin: 15px 0px;
     border-radius: 10px;
 }
 
@@ -81,7 +89,7 @@ body {
 
 #Container_Inicio img {
     width: 100%;
-    height: 600px;
+    height: 620px;
     object-fit: cover;
 }
 
@@ -118,7 +126,7 @@ body {
 
 #Container_Acerca_De_Mi p {
     text-align: justify;
-    font-size: 30px;
+    font-size: 25px;
     padding: 15px;
     color: black;
 }
@@ -145,12 +153,15 @@ body {
 .sub_container_hobbies img {
     width: 380px;
     height: 350px;
+    max-width: 100%;
 }
 
 .sub_container_hobbies p {
     text-align: justify;
     padding: 0 20px;
-    font-size: 25px;
+    font-size: 20px;
+    box-sizing: border-box;
+    word-wrap: break-word;
 }
 
 /* Container Objetivos*/
@@ -163,8 +174,9 @@ body {
 
 #Container_Objetivos img {
     width: 580px;
-    height: 600px;
+    height: 620px;
     margin-top: -70px;
+    max-width: 40%;  
 }
 
 #Container_Objetivos p {
@@ -183,8 +195,9 @@ body {
 
 #Container_Aspiraciones img {
     width: 580px;
-    height: 600px;
+    height: 620px;
     margin-top: -70px;
+    max-width: 40%;
 }
 
 #Container_Aspiraciones p {
@@ -194,7 +207,7 @@ body {
 }
 
 /* Footer */
-#Container_Footer{
+#Container_Footer {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -203,8 +216,143 @@ body {
     background-color: rgb(24, 43, 77);
 }
 
-#Container_Footer p{
+#Container_Footer p {
     font-size: 30px;
     color: whitesmoke;
     margin-top: 10px;
+}
+
+/* Mediaqueries Encabezado*/
+@media screen and (max-width: 900px) {
+    #encabezado {
+        display: flex;
+        flex-direction: column;
+        height: 220px;
+    }
+
+    #navbar {
+        flex-direction: column; 
+        gap: 2px; 
+    }
+
+    #navbar a {
+        font-size: 16px; 
+        padding: 10px 15px; 
+    }
+
+    #encabezado img {
+        width: 40px; 
+        height: 40px;
+        position: relative;
+        left: 0; 
+    }
+}
+
+/* Mediaqueries Titulo de inicio*/
+@media screen and (max-width:900px) {
+    #Container_Inicio h1 {
+        font-size: 25px;
+    }
+}
+
+/* Mediaqueries titulos h2 de contenedores */
+@media screen and (max-width:900px) {
+    .Section_container h2 {
+        font-size: 18px;
+    }
+}
+
+/* Mediaqueries acerca de mi*/
+
+@media screen and (max-width:900px) {
+    #Container_Acerca_De_Mi {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #Container_Acerca_De_Mi img {
+        width: 50%;
+        height: 50%;
+    }
+
+    #Container_Acerca_De_Mi p {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+
+/* Mediaqueries hobbies*/
+@media screen and (max-width: 900px) {
+    #Container_Hobbies {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .sub_container_hobbies {
+        width: 90%;
+        max-width: none;
+    }
+
+    .sub_container_hobbies h2 {
+        font-size: 14px;
+    }
+
+    .sub_container_hobbies img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .sub_container_hobbies p {
+        font-size: 12px;
+    }
+}
+
+/* Mediaqueries objetivos*/
+@media screen and (max-width:900px) {
+
+    #Container_Objetivos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #Container_Objetivos img {
+        width: 100%;
+        height: 100%;
+        margin: 20px;
+    }
+
+    #Container_Objetivos p {
+        font-size: 25px;
+        padding: 10px;
+    }
+}
+
+/* Mediaqueries aspiraciones*/
+@media screen and (max-width:900px) {
+
+    #Container_Aspiraciones {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #Container_Aspiraciones img {
+        width: 100%;
+        height: 100%;
+        margin: 20px;
+    }
+
+    #Container_Aspiraciones p {
+        font-size: 25px;
+        padding: 10px;
+    }
+}
+
+/* Mediaqueries footer*/
+@media screen and (max-width:900px) {
+    #Container_Footer p {
+     margin: 10px 0px;
+        font-size: 25px;
+    }
 }
