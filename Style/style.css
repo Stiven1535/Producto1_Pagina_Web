@@ -220,6 +220,16 @@ body {
     margin-top: 10px;
 }
 
+/* Ajustes del scroll para las secciones */
+#Container_Acerca_De_Mi,
+#Container_Hobbies,
+#Container_Objetivos,
+#Container_Aspiraciones {
+    scroll-margin-top: 320px;
+}
+
+/* Implementacion Responsive con Mediaqueries */
+
 /* Mediaqueries Encabezado*/
 @media screen and (max-width: 900px) {
     #encabezado {
